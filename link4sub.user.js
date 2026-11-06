@@ -55,17 +55,17 @@
         'hiibel.com'
     ];
 
-    // svg icons
+    // icons
     const svg = {
-        cap: '<svg class="syrexa-l4sub-cap" viewBox="0 0 24 24"><path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.24.09-.367.09s-.253-.03-.367-.09l-.003-.001a49.95 49.95 0 0 0-9.902-3.913.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"/><path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.913.485 1.85 1.002 2.808 1.55a49.034 49.034 0 0 0 6.983 2.933ZM19.5 18.75a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75Z"/></svg>',
-        ext: '<svg class="syrexa-l4sub-i" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14L21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1 2-2h6"/></svg>',
-        cpy: '<svg class="syrexa-l4sub-i" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2.5"/><path d="M5 15H4.5A2.5 2.5 0 0 1 2 12.5v-8A2.5 2.5 0 0 1 4.5 2h8A2.5 2.5 0 0 1 15 4.5V5"/></svg>',
-        chk: '<svg class="syrexa-l4sub-i" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>',
-        lnk: '<svg class="syrexa-l4sub-i" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>',
-        spin: '<svg class="syrexa-l4sub-spin" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2.5"/><path d="M12 2a10 10 0 0 1 10 10" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>'
+        cap: '<svg class="syrexa-l4sub-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"/><path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"/></svg>',
+        ext: '<svg class="syrexa-l4sub-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"/><path d="M11 13l9 -9"/><path d="M15 4h5v5"/></svg>',
+        cpy: '<svg class="syrexa-l4sub-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z"/><path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"/></svg>',
+        chk: '<svg class="syrexa-l4sub-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5l10 -10"/></svg>',
+        lnk: '<svg class="syrexa-l4sub-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15l6 -6"/><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/></svg>',
+        spin: '<svg class="syrexa-l4sub-spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9"/></svg>'
     };
 
-    // redirect va popup
+    // redirect and popup
     try {
         Object.defineProperty(document, 'hidden', { get: () => false, configurable: true });
         Object.defineProperty(document, 'visibilityState', { get: () => 'visible', configurable: true });
@@ -87,12 +87,9 @@
         };
     } catch (e) {}
 
-    /*
-    * css
-    * dark ui la so thich cua toi btw
-    */
-    const css = `:root{--b:#000;--c:#0a0a0a;--bd:#1f1f1f;--bdh:#333;--tx:#ededed;--sub:#888;--g:linear-gradient(180deg,#fff 20%,rgba(255,255,255,.6) 100%);--rem:clamp(13px,.85vw + 4px,16px)}html,body{background:#000!important;color:var(--tx)!important;overflow:auto!important;margin:0;padding:0;font-size:var(--rem);display:block!important}[class*="l4g-"],.l4g-header,.l4g-wrap,.l4g-footer,.l4g-card,#botAd,[data-l4s-bot],#pageLoading,.pageLoading{display:none!important}.syrexa-l4sub-wrap{width:min(92vw,680px);margin:clamp(20px,5vh,60px) auto;padding:clamp(16px,2.5vw,28px);position:relative;box-sizing:border-box;animation:vcIn .35s cubic-bezier(.16,1,.3,1)}.syrexa-l4sub-glow{position:fixed;top:0;left:50%;transform:translateX(-50%);width:min(100vw,950px);height:380px;background:radial-gradient(ellipse 65% 50% at 50% 0,rgba(255,255,255,.12),rgba(255,255,255,.03) 40%,transparent 70%);pointer-events:none;z-index:0}.syrexa-l4sub-bar{display:flex;align-items:center;padding-bottom:1.1rem;border-bottom:1px solid var(--bd);margin-bottom:1.8rem;position:relative;z-index:1}.syrexa-l4sub-logo{display:flex;align-items:center;gap:.65rem;font-size:.95rem;font-weight:600;color:#fff;cursor:default}.syrexa-l4sub-cap{width:1.45rem;height:1.45rem;transform:rotate(-15deg);fill:#fff!important;stroke:none!important;color:#fff!important;filter:drop-shadow(0 2px 8px rgba(255,255,255,.3));transition:transform .2s ease}.syrexa-l4sub-logo:hover .syrexa-l4sub-cap{transform:rotate(-5deg) scale(1.1)}.syrexa-l4sub-hero{margin-bottom:1.8rem;position:relative;z-index:1}.syrexa-l4sub-t{font-size:clamp(1.75rem,3.2vw,2.4rem);font-weight:800;letter-spacing:-.04em;line-height:1.2;margin:0 0 .5rem;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.syrexa-l4sub-sub{color:var(--sub);font-size:.9rem;line-height:1.6;margin:0}.syrexa-l4sub-card{background:rgba(10,10,10,.85);backdrop-filter:blur(12px);border:1px solid var(--bd);border-radius:clamp(10px,1.2vw,14px);overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.03),0 24px 48px -12px rgba(0,0,0,.9);position:relative;z-index:1;transition:transform .25s cubic-bezier(.16,1,.3,1),border-color .25s,box-shadow .25s}.syrexa-l4sub-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.25);box-shadow:0 20px 48px -10px rgba(0,0,0,.9),0 0 25px rgba(255,255,255,.08)}.syrexa-l4sub-card-h{display:flex;align-items:center;justify-content:space-between;padding:.75rem 1.15rem;background:#050505;border-bottom:1px solid var(--bd);font-size:.78rem;color:var(--sub)}.syrexa-l4sub-card-b{padding:clamp(1rem,2vw,1.4rem)}.syrexa-l4sub-item{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem .75rem;border-radius:.65rem;border:1px solid transparent;transition:transform .2s cubic-bezier(.16,1,.3,1),background .2s,border-color .2s,box-shadow .2s}.syrexa-l4sub-item:hover{background:rgba(255,255,255,.02);border-color:#262626;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.4),0 0 15px rgba(255,255,255,.05)}.syrexa-l4sub-meta{display:flex;align-items:center;gap:.85rem;min-width:0;flex:1}.syrexa-l4sub-ico{width:2.5rem;height:2.5rem;border-radius:.65rem;background:#141414!important;border:1px solid #242424!important;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:border-color .2s,box-shadow .2s}.syrexa-l4sub-item:hover .syrexa-l4sub-ico{border-color:rgba(255,255,255,.3)!important;box-shadow:0 0 14px rgba(255,255,255,.12)}.syrexa-l4sub-inf{min-width:0;flex:1}.syrexa-l4sub-name{font-size:.9rem;font-weight:600;color:#fff;margin-bottom:.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.syrexa-l4sub-url{font-size:.75rem;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:ui-monospace,monospace}.syrexa-l4sub-acts{display:flex;gap:.6rem;flex-shrink:0}.syrexa-l4sub-btn{display:inline-flex;align-items:center;gap:.45rem;padding:.5rem .95rem;border-radius:.5rem;font-size:.78rem;font-weight:500;text-decoration:none;cursor:pointer;border:none;white-space:nowrap;transition:transform .18s cubic-bezier(.16,1,.3,1),box-shadow .18s,background .18s,border-color .18s}.syrexa-l4sub-btn:active{transform:translateY(0) scale(.97)!important}.syrexa-l4sub-btn-p{background:#fff!important;color:#000!important}.syrexa-l4sub-btn-p:hover{background:#fff!important;transform:translateY(-2px);box-shadow:0 0 20px rgba(255,255,255,.4),0 4px 12px rgba(0,0,0,.3)}.syrexa-l4sub-btn-s{background:#141414!important;color:#ededed!important;border:1px solid #262626!important}.syrexa-l4sub-btn-s:hover{background:#1a1a1a!important;border-color:rgba(255,255,255,.3)!important;transform:translateY(-2px);box-shadow:0 0 16px rgba(255,255,255,.12),0 4px 12px rgba(0,0,0,.4)}.syrexa-l4sub-proc{display:flex;align-items:center;gap:1rem;padding:1.2rem;background:#0d0d0d;border:1px solid var(--bd);border-radius:.65rem;color:var(--sub);font-size:.85rem}.syrexa-l4sub-spin{width:1.5rem;height:1.5rem;animation:vcRotate .8s linear infinite;flex-shrink:0}.syrexa-l4sub-i{width:1rem;height:1rem;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;fill:none!important;flex-shrink:0}.syrexa-l4sub-ico .syrexa-l4sub-i{stroke:#ededed!important}.syrexa-l4sub-btn-s .syrexa-l4sub-i{stroke:#ededed!important}.syrexa-l4sub-btn-p .syrexa-l4sub-i{stroke:#000!important}.syrexa-l4sub-ft{margin-top:2.2rem;padding-top:1.2rem;border-top:1px solid #141414;text-align:center;font-size:.75rem;color:#555;letter-spacing:.02em;position:relative;z-index:1}@media(max-width:560px){.syrexa-l4sub-item{flex-direction:column;align-items:stretch;gap:.75rem}.syrexa-l4sub-acts{justify-content:flex-end}}@keyframes vcIn{from{opacity:0;transform:translateY(12px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}@keyframes vcRotate{to{transform:rotate(360deg)}}`;
-    // setup style
+    // css
+    const css = `:root{--b:#000;--tx:#ededed;--sub:#888;--g:linear-gradient(180deg,#fff 20%,rgba(255,255,255,.6) 100%);--rem:clamp(13px,.85vw + 4px,16px)}html,body{background:#000!important;color:var(--tx)!important;overflow:auto!important;margin:0;padding:0;font-size:var(--rem);display:block!important}[class*="l4g-"],.l4g-header,.l4g-wrap,.l4g-footer,.l4g-card,#botAd,[data-l4s-bot],#pageLoading,.pageLoading{display:none!important}.syrexa-l4sub-wrap{width:min(92vw,680px);margin:clamp(24px,6vh,70px) auto;padding:clamp(16px,2.5vw,28px);position:relative;box-sizing:border-box;animation:vcIn .35s cubic-bezier(.16,1,.3,1)}.syrexa-l4sub-beam{position:fixed;top:-120px;left:50%;transform:translateX(-50%);width:min(100vw,880px);height:540px;background:conic-gradient(from 180deg at 50% 0%,transparent 35deg,rgba(255,255,255,.14) 70deg,rgba(255,255,255,.24) 90deg,rgba(255,255,255,.14) 110deg,transparent 145deg);filter:blur(52px);pointer-events:none;z-index:0}.syrexa-l4sub-glow{position:fixed;top:0;left:50%;transform:translateX(-50%);width:min(100vw,960px);height:400px;background:radial-gradient(ellipse 65% 50% at 50% 0,rgba(255,255,255,.16),rgba(255,255,255,.02) 55%,transparent 75%);pointer-events:none;z-index:0}.syrexa-l4sub-bar{display:flex;align-items:center;padding-bottom:1.1rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.8rem;position:relative;z-index:1}.syrexa-l4sub-logo{display:flex;align-items:center;gap:.65rem;font-size:.95rem;font-weight:600;color:#fff;cursor:default}.syrexa-l4sub-cap{width:1.45rem;height:1.45rem;transform:rotate(-15deg);stroke:#fff!important;filter:drop-shadow(0 2px 8px rgba(255,255,255,.35));transition:transform .2s ease}.syrexa-l4sub-logo:hover .syrexa-l4sub-cap{transform:rotate(-5deg) scale(1.1)}.syrexa-l4sub-hero{margin-bottom:1.8rem;position:relative;z-index:1}.syrexa-l4sub-t{font-size:clamp(1.75rem,3.2vw,2.4rem);font-weight:800;letter-spacing:-.04em;line-height:1.2;margin:0 0 .5rem;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.syrexa-l4sub-sub{color:var(--sub);font-size:.9rem;line-height:1.6;margin:0}.syrexa-l4sub-card{background:linear-gradient(135deg,rgba(255,255,255,.08) 0%,rgba(20,20,24,.92) 35%,rgba(5,5,7,.98) 75%,#000 100%);backdrop-filter:blur(16px);border-radius:18px;position:relative;z-index:1;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.05),0 28px 64px -12px rgba(0,0,0,.95);transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s}.syrexa-l4sub-card::before{content:"";position:absolute;inset:0;border-radius:18px;padding:1px;background:linear-gradient(135deg,rgba(255,255,255,.65) 0%,rgba(255,255,255,.12) 40%,rgba(0,0,0,.5) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}.syrexa-l4sub-card:hover{transform:translateY(-3px);box-shadow:0 0 0 1px rgba(255,255,255,.08),0 34px 72px -10px rgba(0,0,0,.98)}.syrexa-l4sub-card-h{display:flex;align-items:center;justify-content:space-between;padding:.75rem 1.15rem;background:linear-gradient(135deg,rgba(255,255,255,.04) 0%,rgba(5,5,7,.9) 100%);border-bottom:1px solid rgba(255,255,255,.07);font-size:.78rem;color:var(--sub)}.syrexa-l4sub-card-b{padding:clamp(1rem,2vw,1.4rem)}.syrexa-l4sub-item{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem .75rem;border-radius:.65rem;border:1px solid transparent;transition:transform .2s cubic-bezier(.16,1,.3,1),background .2s,border-color .2s,box-shadow .2s}.syrexa-l4sub-item:hover{background:rgba(255,255,255,.025);border-color:rgba(255,255,255,.08);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.5)}.syrexa-l4sub-meta{display:flex;align-items:center;gap:.85rem;min-width:0;flex:1}.syrexa-l4sub-ico{width:2.5rem;height:2.5rem;border-radius:.65rem;background:#141416!important;border:1px solid rgba(255,255,255,.08)!important;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:border-color .2s,box-shadow .2s}.syrexa-l4sub-item:hover .syrexa-l4sub-ico{border-color:rgba(255,255,255,.3)!important;box-shadow:0 0 14px rgba(255,255,255,.12)}.syrexa-l4sub-inf{min-width:0;flex:1}.syrexa-l4sub-name{font-size:.9rem;font-weight:600;color:#fff;margin-bottom:.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.syrexa-l4sub-url{font-size:.75rem;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:ui-monospace,monospace}.syrexa-l4sub-acts{display:flex;gap:.65rem;flex-shrink:0}.syrexa-l4sub-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem 1.15rem;border-radius:12px;font-size:.8rem;font-weight:600;text-decoration:none;cursor:pointer;white-space:nowrap;transition:all .18s cubic-bezier(.16,1,.3,1)}.syrexa-l4sub-btn:active{transform:translateY(0) scale(.97)!important}.syrexa-l4sub-btn-p{background:linear-gradient(180deg,#242426 0%,#161618 100%)!important;color:#fff!important;border:1px solid rgba(255,255,255,.14)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 4px 14px rgba(0,0,0,.6)!important}.syrexa-l4sub-btn-p:hover{background:linear-gradient(180deg,#2c2c2f 0%,#1a1a1d 100%)!important;border-color:rgba(255,255,255,.28)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 6px 20px rgba(0,0,0,.7)!important;transform:translateY(-1.5px)}.syrexa-l4sub-btn-s{background:#111113!important;color:#dedede!important;border:1px solid rgba(255,255,255,.08)!important}.syrexa-l4sub-btn-s:hover{background:#18181b!important;border-color:rgba(255,255,255,.22)!important;transform:translateY(-1.5px);box-shadow:0 4px 12px rgba(0,0,0,.4)}.syrexa-l4sub-proc{display:flex;align-items:center;gap:1rem;padding:1.2rem;background:#09090b;border:1px solid rgba(255,255,255,.06);border-radius:.65rem;color:var(--sub);font-size:.85rem}.syrexa-l4sub-spin{width:1.5rem;height:1.5rem;animation:vcRotate .8s linear infinite;flex-shrink:0}.syrexa-l4sub-i{width:1.05rem;height:1.05rem;stroke:currentColor;fill:none!important;flex-shrink:0}.syrexa-l4sub-ft{margin-top:2.2rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.07);text-align:center;font-size:.75rem;color:#555;letter-spacing:.02em;position:relative;z-index:1}@media(max-width:560px){.syrexa-l4sub-item{flex-direction:column;align-items:stretch;gap:.75rem}.syrexa-l4sub-acts{justify-content:flex-end}}@keyframes vcIn{from{opacity:0;transform:translateY(12px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}@keyframes vcRotate{to{transform:rotate(360deg)}}`;
+
     if (typeof GM_addStyle !== 'undefined') GM_addStyle(css);
     else {
         const st = document.createElement('style');
@@ -114,7 +111,7 @@
         }
     }
 
-    // api
+    // api 
     async function reqfetch(url) {
         try {
             const res = await fetch(url, { cache: 'no-store' });
@@ -134,7 +131,7 @@
         });
     }
 
-    /* copy */
+    // copy
     function copy(text, btn) {
         if (typeof GM_setClipboard !== 'undefined') GM_setClipboard(text);
         else navigator.clipboard.writeText(text);
@@ -155,12 +152,13 @@
         }, 1500);
     }
 
-    /* load */
+    // load
     function loading() {
         if (document.getElementById('syrexa-l4sub-root')) return;
         const wrap = document.createElement('div');
         wrap.id = 'syrexa-l4sub-root';
         wrap.innerHTML = `
+            <div class="syrexa-l4sub-beam"></div>
             <div class="syrexa-l4sub-glow"></div>
             <div class="syrexa-l4sub-wrap">
                 <div class="syrexa-l4sub-bar">
@@ -184,7 +182,7 @@
         (document.body || document.documentElement).appendChild(wrap);
     }
 
-    /* ket qua */
+    // ri siu
     function result(info) {
         document.querySelectorAll('[class*="l4g-"], .l4g-header, .l4g-wrap, .l4g-footer, .l4g-card, #botAd').forEach(el => el.remove());
 
@@ -196,10 +194,11 @@
         }
 
         wrap.innerHTML = `
+            <div class="syrexa-l4sub-beam"></div>
             <div class="syrexa-l4sub-glow"></div>
             <div class="syrexa-l4sub-wrap">
                 <div class="syrexa-l4sub-bar">
-                    <div class="syrexa-l4sub-logo">${svg.cap}<span>Link4Sub Bypass • by huyzeraa</span></div>
+                    <div class="syrexa-l4sub-logo">${svg.cap}<span>Link4Sub Bypass • by Zeraa</span></div>
                 </div>
                 <div class="syrexa-l4sub-hero">
                     <h1 class="syrexa-l4sub-t">Nhanh gọn trong chưa tới 1s.</h1>
@@ -231,7 +230,7 @@
         });
     }
 
-    /* run */
+    // chay
     async function run() {
         const dataUrl = getDataUrl();
         if (!dataUrl) return;
@@ -257,6 +256,3 @@
         run();
     }
 })();
-
-
-// mamboo
