@@ -122,7 +122,7 @@
         }
     }
 
-    // api request
+    // api
     async function requestUrl(url) {
         try {
             const res = await fetch(url, { cache: 'no-store' });
