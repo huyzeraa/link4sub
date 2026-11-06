@@ -42,7 +42,7 @@
 
     const win = typeof unsafeWindow !== 'undefined' ? unsafeWindow : window;
 
-    // ad
+    // ads tuat
     const ads = [
         'broadlyjukeboxunrevised.com',
         'driverhugoverblown.com',
@@ -65,7 +65,7 @@
         spin: '<svg class="syrexa-l4sub-spin" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2.5"/><path d="M12 2a10 10 0 0 1 10 10" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>'
     };
 
-    // redirect & popup
+    // redirect va popup
     try {
         Object.defineProperty(document, 'hidden', { get: () => false, configurable: true });
         Object.defineProperty(document, 'visibilityState', { get: () => 'visible', configurable: true });
@@ -89,7 +89,7 @@
 
     // css
     const css = `:root{--b:#000;--c:#0a0a0a;--bd:#1f1f1f;--bdh:#333;--tx:#ededed;--sub:#888;--g:linear-gradient(180deg,#fff 20%,rgba(255,255,255,.6) 100%);--rem:clamp(13px,.85vw + 4px,16px)}html,body{background:#000!important;color:var(--tx)!important;overflow:auto!important;margin:0;padding:0;font-size:var(--rem);display:block!important}[class*="l4g-"],.l4g-header,.l4g-wrap,.l4g-footer,.l4g-card,#botAd,[data-l4s-bot],#pageLoading,.pageLoading{display:none!important}.syrexa-l4sub-wrap{width:min(92vw,680px);margin:clamp(20px,5vh,60px) auto;padding:clamp(16px,2.5vw,28px);position:relative;box-sizing:border-box;animation:vcIn .35s cubic-bezier(.16,1,.3,1)}.syrexa-l4sub-glow{position:fixed;top:0;left:50%;transform:translateX(-50%);width:min(100vw,950px);height:380px;background:radial-gradient(ellipse 65% 50% at 50% 0,rgba(255,255,255,.12),rgba(255,255,255,.03) 40%,transparent 70%);pointer-events:none;z-index:0}.syrexa-l4sub-bar{display:flex;align-items:center;padding-bottom:1.1rem;border-bottom:1px solid var(--bd);margin-bottom:1.8rem;position:relative;z-index:1}.syrexa-l4sub-logo{display:flex;align-items:center;gap:.65rem;font-size:.95rem;font-weight:600;color:#fff;cursor:default}.syrexa-l4sub-cap{width:1.45rem;height:1.45rem;transform:rotate(-15deg);fill:#fff!important;stroke:none!important;color:#fff!important;filter:drop-shadow(0 2px 8px rgba(255,255,255,.3));transition:transform .2s ease}.syrexa-l4sub-logo:hover .syrexa-l4sub-cap{transform:rotate(-5deg) scale(1.1)}.syrexa-l4sub-hero{margin-bottom:1.8rem;position:relative;z-index:1}.syrexa-l4sub-t{font-size:clamp(1.75rem,3.2vw,2.4rem);font-weight:800;letter-spacing:-.04em;line-height:1.2;margin:0 0 .5rem;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.syrexa-l4sub-sub{color:var(--sub);font-size:.9rem;line-height:1.6;margin:0}.syrexa-l4sub-card{background:rgba(10,10,10,.85);backdrop-filter:blur(12px);border:1px solid var(--bd);border-radius:clamp(10px,1.2vw,14px);overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.03),0 24px 48px -12px rgba(0,0,0,.9);position:relative;z-index:1;transition:transform .25s cubic-bezier(.16,1,.3,1),border-color .25s,box-shadow .25s}.syrexa-l4sub-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.25);box-shadow:0 20px 48px -10px rgba(0,0,0,.9),0 0 25px rgba(255,255,255,.08)}.syrexa-l4sub-card-h{display:flex;align-items:center;justify-content:space-between;padding:.75rem 1.15rem;background:#050505;border-bottom:1px solid var(--bd);font-size:.78rem;color:var(--sub)}.syrexa-l4sub-card-b{padding:clamp(1rem,2vw,1.4rem)}.syrexa-l4sub-item{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem .75rem;border-radius:.65rem;border:1px solid transparent;transition:transform .2s cubic-bezier(.16,1,.3,1),background .2s,border-color .2s,box-shadow .2s}.syrexa-l4sub-item:hover{background:rgba(255,255,255,.02);border-color:#262626;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.4),0 0 15px rgba(255,255,255,.05)}.syrexa-l4sub-meta{display:flex;align-items:center;gap:.85rem;min-width:0;flex:1}.syrexa-l4sub-ico{width:2.5rem;height:2.5rem;border-radius:.65rem;background:#141414!important;border:1px solid #242424!important;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:border-color .2s,box-shadow .2s}.syrexa-l4sub-item:hover .syrexa-l4sub-ico{border-color:rgba(255,255,255,.3)!important;box-shadow:0 0 14px rgba(255,255,255,.12)}.syrexa-l4sub-inf{min-width:0;flex:1}.syrexa-l4sub-name{font-size:.9rem;font-weight:600;color:#fff;margin-bottom:.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.syrexa-l4sub-url{font-size:.75rem;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:ui-monospace,monospace}.syrexa-l4sub-acts{display:flex;gap:.6rem;flex-shrink:0}.syrexa-l4sub-btn{display:inline-flex;align-items:center;gap:.45rem;padding:.5rem .95rem;border-radius:.5rem;font-size:.78rem;font-weight:500;text-decoration:none;cursor:pointer;border:none;white-space:nowrap;transition:transform .18s cubic-bezier(.16,1,.3,1),box-shadow .18s,background .18s,border-color .18s}.syrexa-l4sub-btn:active{transform:translateY(0) scale(.97)!important}.syrexa-l4sub-btn-p{background:#fff!important;color:#000!important}.syrexa-l4sub-btn-p:hover{background:#fff!important;transform:translateY(-2px);box-shadow:0 0 20px rgba(255,255,255,.4),0 4px 12px rgba(0,0,0,.3)}.syrexa-l4sub-btn-s{background:#141414!important;color:#ededed!important;border:1px solid #262626!important}.syrexa-l4sub-btn-s:hover{background:#1a1a1a!important;border-color:rgba(255,255,255,.3)!important;transform:translateY(-2px);box-shadow:0 0 16px rgba(255,255,255,.12),0 4px 12px rgba(0,0,0,.4)}.syrexa-l4sub-proc{display:flex;align-items:center;gap:1rem;padding:1.2rem;background:#0d0d0d;border:1px solid var(--bd);border-radius:.65rem;color:var(--sub);font-size:.85rem}.syrexa-l4sub-spin{width:1.5rem;height:1.5rem;animation:vcRotate .8s linear infinite;flex-shrink:0}.syrexa-l4sub-i{width:1rem;height:1rem;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;fill:none!important;flex-shrink:0}.syrexa-l4sub-ico .syrexa-l4sub-i{stroke:#ededed!important}.syrexa-l4sub-btn-s .syrexa-l4sub-i{stroke:#ededed!important}.syrexa-l4sub-btn-p .syrexa-l4sub-i{stroke:#000!important}.syrexa-l4sub-ft{margin-top:2.2rem;padding-top:1.2rem;border-top:1px solid #141414;text-align:center;font-size:.75rem;color:#555;letter-spacing:.02em;position:relative;z-index:1}@media(max-width:560px){.syrexa-l4sub-item{flex-direction:column;align-items:stretch;gap:.75rem}.syrexa-l4sub-acts{justify-content:flex-end}}@keyframes vcIn{from{opacity:0;transform:translateY(12px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}@keyframes vcRotate{to{transform:rotate(360deg)}}`;
-
+    // setup style
     if (typeof GM_addStyle !== 'undefined') GM_addStyle(css);
     else {
         const st = document.createElement('style');
@@ -97,17 +97,6 @@
         document.head.appendChild(st);
     }
 
-    // devicePixelRatio
-    function bindDpi() {
-        const mq = win.matchMedia(`(resolution: ${win.devicePixelRatio || 1}dppx)`);
-        const update = () => {
-            document.documentElement.style.setProperty('--dpr', String(win.devicePixelRatio || 1));
-            bindDpi();
-        };
-        try { mq.addEventListener('change', update, { once: true }); }
-        catch (e) { mq.addListener(update); }
-    }
-    bindDpi();
 
     // get data url
     function getDataUrl() {
@@ -123,7 +112,7 @@
     }
 
     // api
-    async function requestUrl(url) {
+    async function reqfetch(url) {
         try {
             const res = await fetch(url, { cache: 'no-store' });
             if (res.ok) return await res.json();
@@ -142,7 +131,7 @@
         });
     }
 
-    // copy
+    /* copy */
     function copy(text, btn) {
         if (typeof GM_setClipboard !== 'undefined') GM_setClipboard(text);
         else navigator.clipboard.writeText(text);
@@ -163,7 +152,7 @@
         }, 1500);
     }
 
-    // loading
+    /* load */
     function loading() {
         if (document.getElementById('syrexa-l4sub-root')) return;
         const wrap = document.createElement('div');
@@ -192,7 +181,7 @@
         (document.body || document.documentElement).appendChild(wrap);
     }
 
-    // result
+    /* ket qua */
     function result(info) {
         document.querySelectorAll('[class*="l4g-"], .l4g-header, .l4g-wrap, .l4g-footer, .l4g-card, #botAd').forEach(el => el.remove());
 
@@ -239,7 +228,7 @@
         });
     }
 
-    // start script
+    /* run */
     async function run() {
         const dataUrl = getDataUrl();
         if (!dataUrl) return;
@@ -247,12 +236,12 @@
         loading();
 
         try {
-            const res = await requestUrl(dataUrl);
+            const res = await reqfetch(dataUrl);
             const d = res?.data;
             if (d?.destinationUrl) {
                 result({
                     url: d.destinationUrl,
-                    title: d.title || d.slug || '[ Syrexa ] Untitled.',
+                    title: d.title || '[ Syrexa ] Untitled.',
                     name: d.destinationFileName || '[ Syrexa ] Untitled.'
                 });
             }
